@@ -1,0 +1,133 @@
+
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  color: #243b55;
+  margin-bottom: 25px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.dashboard div {
+  background-color: white;
+  padding: 20px 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+input,
+select {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #8bb8f0;
+  border-color: #3674c5;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  margin: 0;
+}
+
+form button {
+  margin-top: 15px;
+}
+
+/* Job list heading */
+.job-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  margin: 15px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.job-info {
+  min-width: 0;
+}
+
+.job-info h3 {
+  margin: 0 0 12px;
+  color: #243b55;
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+
+.job-info p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.job-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.job-actions button {
+  margin: 0;
+}
+
+.job-actions button:last-child {
+  background: #dc3545;
+}
+
+.job-actions button:last-child:hover {
+  background: #b02a37;
+}
+
+@media (max-width: 500px) {
+  .job-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
